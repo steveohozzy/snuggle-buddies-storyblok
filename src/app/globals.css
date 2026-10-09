@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: var(--font-fredoka), sans-serif;
+  --font-sans: var(--font-quicksand), sans-serif;
+  --font-serif: var(--font-fredoka), sans-serif;
+  --font-mono: var(--font-quicksand), sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-chart-4: var(--primary);
+
+  --color-blush: var(--blush);
+  --color-mint: var(--mint);
+  --color-sunshine: var(--sunshine);
+  --color-hero-shade: var(--hero-shade);
+  --color-surface: var(--surface);
+}
+
+:root {
+  --background: oklch(99% 0.006 345);
+  --foreground: oklch(30% 0.058 190);
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+
+  --primary: oklch(39% 0.069 188);
+  --primary-foreground: oklch(99% 0.006 345);
+
+  --secondary: oklch(85% 0.075 355);
+  --muted: oklch(96% 0.016 345);
+  --muted-foreground: oklch(51% 0.035 190);
+
+  --accent: oklch(88% 0.044 175);
+  --destructive: oklch(55% 0.22 25);
+
+  --border: oklch(90% 0.018 175);
+  --input: var(--border);
+
+  --blush: oklch(85% 0.075 355);
+  --mint: oklch(86% 0.041 177);
+  --sunshine: oklch(88% 0.11 91);
+  --hero-shade: oklch(96% 0.023 25);
+  --surface: oklch(100% 0 0);
+
+  --shadow-dialog: 0 20px 70px oklch(30% 0.05 190 / 18%);
+  --overlay: oklch(25% 0.04 190 / 42%);
+
+  --chart-4: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 8s ease-in-out infinite;
+}
