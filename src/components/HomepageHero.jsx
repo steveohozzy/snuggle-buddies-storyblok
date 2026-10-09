@@ -43,7 +43,7 @@ export default function HomeHero({ blok }) {
         </div>
 
         {/* Content */}
-        <div className="relative mx-auto grid min-h-[550px] max-w-[1600px] grid-cols-1 items-center px-6 py-16 sm:min-h-[600px] sm:px-10 lg:min-h-[550px] lg:grid-cols-2 lg:px-14 lg:py-20">
+        <div className="relative mx-auto grid min-h-[550px] max-w-7xl grid-cols-1 items-center px-6 py-16 sm:min-h-[600px] sm:px-10 lg:min-h-[550px] lg:grid-cols-2 lg:px-14 lg:py-20">
           <div className="relative z-10 max-w-[450px]">
             {blok.Tagline && (
               <div className="mb-6 flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[#004c46] sm:text-xs">
@@ -136,31 +136,29 @@ export default function HomeHero({ blok }) {
               </dl>
             )}
           </div>
-        </div>
-
-        {/* Cuddle-time sticker */}
-        {blok.ImageStampTitle && (
-          <div className="absolute right-5 top-8 z-20 flex h-24 w-24 rotate-[10deg] flex-col items-center justify-center rounded-full bg-[#f5d76e] px-2 text-center text-[#004c46] sm:right-10 sm:top-10 sm:h-28 sm:w-28">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="mb-1 h-5 w-5"
-              aria-hidden="true"
-            >
-              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
-            </svg>
-            <span className="text-xs font-medium leading-tight sm:text-sm">
-              {blok.ImageStampTitle}
-            </span>
-            {blok.ImageStampText && (
-              <span className="mt-0.5 text-[10px] leading-tight sm:text-xs">
-                {blok.ImageStampText}
+          {blok.ImageStampTitle && (
+            <div className="absolute right-0 top-10 z-20 flex h-24 w-24 rotate-[10deg] flex-col items-center justify-center rounded-full bg-sunshine px-2 text-center text-primary sm:right-0 sm:top-12 sm:h-28 sm:w-28">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="mb-1 h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+              </svg>
+              <span className="text-xs font-medium leading-tight sm:text-sm">
+                {blok.ImageStampTitle}
               </span>
-            )}
-          </div>
-        )}
+              {blok.ImageStampText && (
+                <span className="mt-0.5 text-[10px] leading-tight sm:text-xs">
+                  {blok.ImageStampText}
+                </span>
+              )}
+            </div>
+          )}
+        </div>
       </section>
     </>
   );

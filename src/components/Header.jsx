@@ -89,10 +89,10 @@ export default function Header({ blok, buddies = [] }) {
         className="sticky top-0 z-50 border-b border-border bg-white"
       >
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="flex h-30 items-center justify-between">
+          <div className="flex h-24 items-center justify-between">
             <Link
               href="/"
-              className="relative h-24 w-40 shrink-0"
+              className="relative h-20 w-40 shrink-0"
               onClick={() => setOpen(false)}
             >
               <Image

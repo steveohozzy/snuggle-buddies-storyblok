@@ -28,7 +28,7 @@ className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24"
     )}
   </div>
 
-  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+  <div className="grid grid-cols-1 gap-[26px] md:grid-cols-[1fr_1.4fr]">
     {cards.map((card) => {
       const category = (card.Category || "").trim();
 
@@ -41,10 +41,10 @@ className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24"
           key={card._uid}
           href={href}
           {...storyblokEditable(card)}
-          className="group overflow-hidden rounded-2xl border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+          className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
         >
           {card.Image?.filename && (
-            <div className="aspect-[16/9] overflow-hidden bg-muted">
+            <div className="h-56 shrink-0 overflow-hidden bg-muted md:h-72">
               <img
                 src={card.Image.filename}
                 alt={card.ImageAlt || card.Title || category}
@@ -54,7 +54,7 @@ className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24"
             </div>
           )}
 
-          <div className="p-5 md:p-7">
+          <div className="flex flex-1 flex-col justify-between p-5 md:p-7">
             {card.Eyebrow && (
               <p className="mb-2 text-xs font-bold uppercase tracking-widest text-primary">
                 {card.Eyebrow}
