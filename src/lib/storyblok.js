@@ -19,6 +19,7 @@ import TabItem from "@/components/TabItem";
 import BuddiesSection from "@/components/BuddiesSection";
 import BuddiesPage from "@/components/BuddiesPage";
 import BuddiesCategoryLinks from "@/components/BuddiesCategoryLinks";
+import SnuggleEndNote from "@/components/SnuggleEndNote";
 
 import { apiPlugin, storyblokInit } from "@storyblok/react";
 
@@ -43,6 +44,7 @@ export const components = {
   buddiesSection: BuddiesSection,
   buddiesPage: BuddiesPage,
   buddiesCategoryLinks: BuddiesCategoryLinks,
+  snuggleEndNote: SnuggleEndNote,
 };
 
 export const getStoryblokApi = storyblokInit({
