@@ -89,7 +89,7 @@ export default async function Footer() {
     console.log(
   footerData?.story?.content?.body
 );
-  return ( <footer className="relative mt-auto border-t border-border bg-background text-foreground"> <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:gap-12 md:px-8 md:py-16"> <div> <Link href="/" aria-label="ADDO Play home" className="inline-flex">
+  return ( <footer className="relative mt-auto border-t border-border bg-[#f9f9f9] text-foreground"> <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:gap-12 md:px-8 md:py-16"> <div> <Link href="/" aria-label="ADDO Play home" className="inline-flex">
 <Image
 src={
 footer.logo?.filename ||

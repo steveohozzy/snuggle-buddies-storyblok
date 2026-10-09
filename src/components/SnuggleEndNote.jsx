@@ -22,7 +22,7 @@ return (
 <section
 {...storyblokEditable(blok)}
 id={blok.AnchorId || undefined}
-className="bg-[#f9e6e2] px-4 py-16 text-[#004c46] md:px-8 md:py-20"
+className="px-4 py-16 text-[#004c46] md:px-8 md:py-20"
 > <div className="mx-auto flex max-w-3xl flex-col items-center text-center"> <Heart
        size={28}
        strokeWidth={1.5}
