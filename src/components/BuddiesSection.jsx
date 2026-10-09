@@ -35,7 +35,7 @@ export default async function BuddiesSection({ blok }) {
         </div>
 
         <Link
-          href={blok.link?.cached_url ? `/${blok.link.cached_url}` : "/buddies"}
+          href={blok.link?.cached_url ? `/${blok.link.cached_url}` : "/meet-the-buddies"}
           className="inline-flex shrink-0 items-center gap-2 font-semibold text-primary transition-colors hover:text-foreground"
         >
           {blok.linkLabel || "Explore all buddies"}
