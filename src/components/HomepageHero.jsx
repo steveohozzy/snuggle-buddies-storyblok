@@ -43,7 +43,7 @@ export default function HomeHero({ blok }) {
         </div>
 
         {/* Content */}
-        <div className="relative mx-auto grid min-h-[550px] max-w-7xl grid-cols-1 items-center px-6 py-16 sm:min-h-[600px] sm:px-10 lg:min-h-[550px] lg:grid-cols-2 lg:px-14 lg:py-20">
+        <div className="relative mx-auto grid min-h-[550px] max-w-7xl grid-cols-1 items-center px-4 py-10 sm:min-h-[600px] sm:px-10 sm:py-16 lg:min-h-[550px] lg:grid-cols-2 lg:px-14 lg:py-20">
           <div className="relative z-10 max-w-[450px]">
             {blok.Tagline && (
               <div className="mb-6 flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[#004c46] sm:text-xs">
@@ -73,7 +73,7 @@ export default function HomeHero({ blok }) {
             </h1>
 
             {blok.Subtitle && (
-              <p className="mt-6 max-w-[390px] whitespace-pre-line text-base leading-[1.8] text-[#004c46] sm:text-lg">
+              <p className="hidden md:block mt-6 max-w-[300px] whitespace-pre-line text-base leading-[1.8] text-[#004c46] sm:text-lg">
                 {blok.Subtitle}
               </p>
             )}
